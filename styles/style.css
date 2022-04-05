@@ -1,0 +1,61 @@
+header {
+  width: 1440px;
+  height: 112px;
+  background-image: url(background-header.png);
+}
+
+.button {
+  width: 194px;
+  height: 29px;
+}
+
+.logo-image {
+  width: 105.49px;
+  height: 35.82px;
+}
+
+.logo-image2 {
+  width: 34.04px;
+  height: 50.76px;
+}
+
+.logo-image3 {
+  width: 128.66px;
+  height: 35.78px;
+}
+
+.tele {
+
+  width: 256px;
+  height: 34px;
+  color: #060D10;
+}
+
+.location-image {
+  width: 1440px;
+  height: 766px;
+}
+
+.product {
+  width: 1440px;
+  height: 998px;
+  background-image: url(background-main-1.png);
+}
+
+.start {
+  width: 1440px;
+  height: 1003px;
+  background-image: url(background-main-2.png);
+}
+
+.advertising-image {
+  width: 297px;
+  height: 297px;
+}
+
+footer {
+  width: 1440px;
+
+  background-image: url(footer.png);
+  color: #fff;
+}
