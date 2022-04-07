@@ -1,51 +1,168 @@
-header {
-  width: 1440px;
-  height: 112px;
-  background-image: url(background-header.png);
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.button {
-  width: 194px;
-  height: 29px;
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../fonts/montserrat-v23-latin_cyrillic-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v23-latin_cyrillic-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* oswald-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../fonts/oswald-v47-latin_cyrillic-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/oswald-v47-latin_cyrillic-500.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* header: кнопка начать учиться, логотип, телефон */
+header {
+  background: #66d1ff;
+}
+
+.btn {
+  font-family: "Montserrat", "sans-serif";
+  width: 276px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  background: #fff;
 }
 
 .logo-image {
-  width: 105.49px;
-  height: 35.82px;
+  width: 106px;
+  height: 36px;
 }
 
 .logo-image2 {
-  width: 34.04px;
-  height: 50.76px;
+  width: 34px;
+  height: 51px;
 }
 
 .logo-image3 {
-  width: 128.66px;
-  height: 35.78px;
+  width: 129px;
+  height: 36px;
 }
 
 .tele {
-
-  width: 256px;
-  height: 34px;
-  color: #060D10;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #060d10;
 }
 
+/* location локация и заголовок */
 .location-image {
   width: 1440px;
   height: 766px;
 }
 
-.product {
-  width: 1440px;
-  height: 998px;
-  background-image: url(background-main-1.png);
+.subject {
+  font-family: "Oswald", "sans-serif";
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
+.subtitle {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #fff;
+  text-transform: none;
+}
+
+/* product список */
+.product {
+  background-image: url(background-main-1.png);
+  height: 998px;
+  width: 1440px;
+  opacity: 0, 1;
+}
+
+.promo {
+  font-family: "Oswald", "sans-serif";
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
+  text-align: center;
+  color: #060d10;
+  text-transform: uppercase;
+}
+
+.product-item {
+  font-family: "Oswald", "sans-serif";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 53px;
+  color: #060d10;
+  text-transform: uppercase;
+}
+
+.services-description {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  color: #060d10;
+  opacity: 0.8;
+  text-transform: none;
+}
+
+/* start кнопка начала и фото рекламы */
 .start {
   width: 1440px;
   height: 1003px;
   background-image: url(background-main-2.png);
+}
+
+.start-enter {
+  font-family: "Oswald", "sans-serif";
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
+  text-align: center;
+  color: #060d10;
+  text-transform: uppercase;
+}
+
+.btn1 {
+  height: 86px;
+  width: 505px;
+  border-radius: 4px;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  align-items: center;
+  text-align: center;
+  color: #060d10;
 }
 
 .advertising-image {
@@ -53,9 +170,27 @@ header {
   height: 297px;
 }
 
+/* footer присоединиться, иконки, +V +C*/
 footer {
-  width: 1440px;
-
-  background-image: url(footer.png);
+  background: #060d10;
   color: #fff;
+}
+
+.copyright {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+
+}
+
+.copyright1 {
+  font-family: "Montserrat", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  text-align: right;
 }
