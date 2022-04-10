@@ -34,6 +34,12 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
 /* header: кнопка начать учиться, логотип, телефон */
 header {
   background: #66d1ff;
@@ -41,28 +47,15 @@ header {
 
 .btn {
   font-family: "Montserrat", "sans-serif";
-  width: 276px;
-  height: 45px;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
+  border-radius: 4px;
   background: #fff;
+  border: 1px solid #fff;
 }
 
-.logo-image {
-  width: 106px;
-  height: 36px;
-}
-
-.logo-image2 {
-  width: 34px;
-  height: 51px;
-}
-
-.logo-image3 {
-  width: 129px;
-  height: 36px;
-}
+.logo-image {}
 
 .tele {
   font-family: "Montserrat", "sans-serif";
@@ -73,9 +66,18 @@ header {
 }
 
 /* location локация и заголовок */
-.location-image {
-  width: 1440px;
-  height: 766px;
+.location {
+  text-align: center;
+  color: #fff;
+  background-image: url('../images/location.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.location-fade {
+  padding: 240px 0 260px 0;
+  background-color: rgba(6, 13, 16, .25);
 }
 
 .subject {
@@ -84,7 +86,6 @@ header {
   font-size: 60px;
   line-height: 89px;
   text-align: center;
-  color: #fff;
   text-transform: uppercase;
 }
 
@@ -94,19 +95,16 @@ header {
   font-size: 32px;
   line-height: 39px;
   text-align: center;
-  color: #fff;
   text-transform: none;
 }
 
 /* product список */
 .product {
-  background-image: url(background-main-1.png);
-  height: 998px;
-  width: 1440px;
-  opacity: 0, 1;
+  background-color: rgba(102, 209, 255, .1);
 }
 
 .promo {
+  padding-top: 170px;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 48px;
@@ -137,12 +135,11 @@ header {
 
 /* start кнопка начала и фото рекламы */
 .start {
-  width: 1440px;
-  height: 1003px;
-  background-image: url(background-main-2.png);
+  background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
 }
 
 .start-enter {
+  padding-top: 170px;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 48px;
@@ -153,9 +150,6 @@ header {
 }
 
 .btn1 {
-  height: 86px;
-  width: 505px;
-  border-radius: 4px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 36px;
@@ -163,11 +157,28 @@ header {
   align-items: center;
   text-align: center;
   color: #060d10;
+  border: 3px solid #060d10;
+  padding: 20px 107px 22px 108px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 130px;
+  margin-left: 466px;
 }
 
-.advertising-image {
-  width: 297px;
-  height: 297px;
+.advertising-image1 {
+
+}
+
+.advertising-image2 {
+
+}
+
+.advertising-image3 {
+
+}
+
+.advertising-image4 {
+
 }
 
 /* footer присоединиться, иконки, +V +C*/
@@ -176,18 +187,20 @@ footer {
   color: #fff;
 }
 
-.copyright {
+.join {
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
+}
+
+.social {
 
 }
 
-.copyright1 {
+.copyright {
   font-family: "Montserrat", "sans-serif";
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
