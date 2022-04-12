@@ -34,6 +34,15 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -42,22 +51,37 @@
 
 /* header: кнопка начать учиться, логотип, телефон */
 header {
+  padding: 31px 0;
   background: #66d1ff;
 }
 
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .btn {
+  padding: 8px 41px;
+  margin-left: 81px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   border-radius: 4px;
+  color: #060d10;
   background: #fff;
   border: 1px solid #fff;
+  filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.25));
 }
 
-.logo-image {}
+.btn:hover {
+  color: #fff;
+  background: #060d10;
+}
 
 .tele {
+  margin-right: 81px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 28px;
@@ -67,8 +91,8 @@ header {
 
 /* location локация и заголовок */
 .location {
-  text-align: center;
   color: #fff;
+  text-align: center;
   background-image: url('../images/location.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,21 +105,30 @@ header {
 }
 
 .subject {
+  margin-top: 0;
+  margin-bottom: 60px;
+  margin-right: 81px;
+  margin-left: 81px;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 60px;
   line-height: 89px;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
 .subtitle {
+  margin-bottom: 0;
+  margin-right: 190px;
+  margin-left: 190px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
   text-align: center;
   text-transform: none;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
 /* product список */
@@ -104,14 +137,20 @@ header {
 }
 
 .promo {
-  padding-top: 170px;
+  margin-top: 170px;
+  margin-bottom: 100px;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
-  text-align: center;
   color: #060d10;
+  text-align: center;
   text-transform: uppercase;
+
+}
+
+.product-wrap {
+  display: flex;
 }
 
 .product-item {
@@ -140,58 +179,62 @@ header {
 
 .start-enter {
   padding-top: 170px;
+  margin-top: 0px;
+  margin-bottom: 60px;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
-  text-align: center;
   color: #060d10;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .btn1 {
+  padding: 20px 107px 22px 108px;
+  margin-bottom: 130px;
+  margin-left: 466px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
-  align-items: center;
   text-align: center;
   color: #060d10;
   border: 3px solid #060d10;
-  padding: 20px 107px 22px 108px;
   background: #fff;
   border-radius: 4px;
-  margin-bottom: 130px;
-  margin-left: 466px;
 }
 
-.advertising-image1 {
-
+.btn1:hover {
+  color: #fff;
+  background: #060d10;
 }
 
-.advertising-image2 {
-
-}
-
-.advertising-image3 {
-
-}
-
-.advertising-image4 {
-
+.image-wrap {
+  margin: 0 81px 180px 81px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .image {
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* footer присоединиться, иконки, +V +C*/
 footer {
-  background: #060d10;
+  padding: 35px 0;
   color: #fff;
+  background: #060d10;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .join {
+  margin: 0 50px 0 98px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 20px;
@@ -200,14 +243,24 @@ footer {
 }
 
 .social {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
 
+.icon {
+  margin-right: 20px;
 }
 
 .copyright {
+  margin: 0 81px 0 0;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  align-items: center;
   text-align: right;
 }
