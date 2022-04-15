@@ -44,9 +44,8 @@ img {
 }
 
 .container {
-  width: 1440px;
+  width: 1278px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 /* header: кнопка начать учиться, логотип, телефон */
@@ -62,8 +61,9 @@ header {
 }
 
 .btn {
-  padding: 8px 41px;
-  margin-left: 81px;
+  display: inline-block;
+  padding: 7px 41px;
+  min-width: 276px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 24px;
@@ -73,6 +73,7 @@ header {
   background: #fff;
   border: 1px solid #fff;
   filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.25));
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -81,7 +82,6 @@ header {
 }
 
 .tele {
-  margin-right: 81px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 28px;
@@ -104,11 +104,15 @@ header {
   background-color: rgba(6, 13, 16, .25);
 }
 
+.subtitle-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .subject {
-  margin-top: 0;
-  margin-bottom: 60px;
-  margin-right: 81px;
-  margin-left: 81px;
+  margin: 0;
+  padding-bottom: 60px;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 60px;
@@ -119,15 +123,13 @@ header {
 }
 
 .subtitle {
-  margin-bottom: 0;
-  margin-right: 190px;
-  margin-left: 190px;
+  margin: 0;
+  width: 1060px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
   text-align: center;
-  text-transform: none;
   text-shadow: 1px 1px 2px #060D10;
 }
 
@@ -137,8 +139,8 @@ header {
 }
 
 .promo {
-  margin-top: 170px;
-  margin-bottom: 100px;
+  padding: 170px 0 100px;
+  margin: 0;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 48px;
@@ -149,11 +151,23 @@ header {
 
 }
 
-.product-wrap {
+.list {
+  padding-bottom: 100px;
+  padding-left: 0;
+  margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .product-item {
+  flex-basis: calc(33.33% - 15px);
+  list-style: none;
+}
+
+.title-services {
+  padding: 0;
+  margin: 0;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 32px;
@@ -163,6 +177,8 @@ header {
 }
 
 .services-description {
+  margin: 0;
+  padding: 25px 0 70px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 400;
   font-size: 26px;
@@ -178,9 +194,8 @@ header {
 }
 
 .start-enter {
-  padding-top: 170px;
-  margin-top: 0px;
-  margin-bottom: 60px;
+  padding: 170px 0 80px;
+  margin: 0px;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 48px;
@@ -190,10 +205,14 @@ header {
   text-transform: uppercase;
 }
 
+.btn1-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .btn1 {
-  padding: 20px 107px 22px 108px;
-  margin-bottom: 130px;
-  margin-left: 466px;
+  padding: 17px 108px 19px 108px;
+  min-width: 505px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 36px;
@@ -203,6 +222,7 @@ header {
   border: 3px solid #060d10;
   background: #fff;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn1:hover {
@@ -211,7 +231,9 @@ header {
 }
 
 .image-wrap {
-  margin: 0 81px 180px 81px;
+  padding: 130px 0 180px;
+  margin: 0;
+  flex-basis: calc(25% - 15px);
   display: flex;
   justify-content: space-between;
 }
@@ -229,12 +251,12 @@ footer {
 
 .footer-wrap {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
 .join {
-  margin: 0 50px 0 98px;
+  margin: 0 50px 0 0;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 20px;
@@ -243,21 +265,27 @@ footer {
 }
 
 .social {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.icon {
+.social-item {
   margin-right: 20px;
 }
 
+.social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .copyright {
-  margin: 0 81px 0 0;
+  margin: 0;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
   font-size: 18px;
