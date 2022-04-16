@@ -38,6 +38,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -61,8 +65,8 @@ header {
 }
 
 .btn {
-  display: inline-block;
   padding: 7px 41px;
+  display: inline-block;
   min-width: 276px;
   font-family: "Montserrat", "sans-serif";
   font-weight: 500;
@@ -91,8 +95,8 @@ header {
 
 /* location локация и заголовок */
 .location {
-  color: #fff;
   text-align: center;
+  color: #fff;
   background-image: url('../images/location.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,8 +115,8 @@ header {
 }
 
 .subject {
-  margin: 0;
   padding-bottom: 60px;
+  margin: 0;
   font-family: "Oswald", "sans-serif";
   font-weight: 500;
   font-size: 60px;
@@ -177,8 +181,8 @@ header {
 }
 
 .services-description {
-  margin: 0;
   padding: 25px 0 70px;
+  margin: 0;
   font-family: "Montserrat", "sans-serif";
   font-weight: 400;
   font-size: 26px;
@@ -265,9 +269,9 @@ footer {
 }
 
 .social {
-  display: flex;
   padding: 0;
   margin: 0;
+  display: flex;
   list-style: none;
 }
 
