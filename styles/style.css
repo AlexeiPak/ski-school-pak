@@ -165,7 +165,7 @@ header {
 }
 
 .product-item {
-  flex-basis: calc(33.33% - 15px);
+  flex-basis: calc(33.33% - 20px);
   list-style: none;
 }
 
@@ -237,7 +237,7 @@ header {
 .image-wrap {
   padding: 130px 0 180px;
   margin: 0;
-  flex-basis: calc(25% - 15px);
+  flex-basis: calc(25% - 22.5px);
   display: flex;
   justify-content: space-between;
 }
